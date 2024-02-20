@@ -1,0 +1,27 @@
+:root {
+  /* colors */
+  --color-primary: #8B0000;
+  --color-secondary: #36454F;
+  --color-accent: #FF4500;
+
+  /* sizes */
+
+  /* positions */
+}
+
+html {
+  /* will choose font-family later */
+  font-family: sans-serif;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: var(--color-primary);
+}
+
+/* --- MAIN --- */
+
+/* --- FOOTER --- */
+footer {
+  background-color: var(--color-primary);
+}
