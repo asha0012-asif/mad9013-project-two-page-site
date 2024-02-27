@@ -28,10 +28,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 a,
 a:hover,
 a:focus-visible {
@@ -123,6 +119,7 @@ a:focus-visible {
 .header__list-item:hover,
 .header__list-item:focus-visible {
   cursor: pointer;
+  text-decoration: underline;
   background-color: var(--color-accent);
 }
 
@@ -163,6 +160,81 @@ a:focus-visible {
   margin-bottom: 1rem;
 }
 
+/* --- CARD GROUP --- */
+.card-group {
+  background-color: var(--color-secondary);
+}
+
+.card-group .container {
+  padding: 5rem 2rem;
+}
+
+/* --- CARD GRID --- */
+.card-grid {
+  grid-area: "card-grid";
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  gap: 1.5rem;
+}
+
+/* --- CARDS --- */
+.card {
+  background-color: var(--color-white);
+  border-radius: .5em;
+  box-shadow: 0 .25rem .5rem #fff1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover,
+.card:focus-visible {
+  box-shadow: 0 .25rem .75rem #fff2;
+  cursor: pointer;
+
+  transform: translateY(-0.5rem);
+  animation-timing-function: ease-in-out;
+  
+  .card__image:hover {
+    background-color: var(--color-accent);
+  }
+
+  .card__content-title {
+    color: var(--color-accent);
+  }
+}
+
+.card__image {
+  background-color: var(--color-primary);
+}
+
+.card__image img {
+  border-radius: .5em .5em 0 0;
+
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* - CARD CONTENT - */
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 2;
+  
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card__content-title {
+  color: var(--color-primary);
+  margin-bottom: .5rem;
+}
+
 /* --- MEDIA QUERIES --- */
 
 /* TABLET SIZES + */
@@ -201,6 +273,10 @@ a:focus-visible {
     --banner-size: 75vh;
   }
 
+  /* --- CARD GRID --- */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* LAPTOP SIZES + */
@@ -208,5 +284,10 @@ a:focus-visible {
   /* --- BANNER --- */
   .banner .container {
     --position-horizontal: flex-start;
+  }
+
+  /* --- CARD GRID --- */
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
