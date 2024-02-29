@@ -160,7 +160,7 @@ a:focus-visible {
   margin-bottom: 1rem;
 }
 
-/* --- CARD GROUP --- */
+/* --- CARD GROUP 1--- */
 .card-group {
   background-color: var(--color-secondary);
 }
@@ -262,6 +262,18 @@ a:focus-visible {
   margin-bottom: 1rem;
 }
 
+/* CARD GROUP 2 */
+.card-group__title {
+  color: var(--color-white);
+  font-size: 1.756rem;
+  margin-bottom: 1rem;
+}
+
+#card-group__2 .card__content {
+  align-items: flex-start;
+  text-align: left;
+}
+
 /* --- MEDIA QUERIES --- */
 
 /* ------ TABLET SIZES + ------ */
@@ -302,7 +314,7 @@ a:focus-visible {
 
   /* --- CARD GRID --- */
   .card-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* --- SPLIT IMAGE CONTENT --- */
