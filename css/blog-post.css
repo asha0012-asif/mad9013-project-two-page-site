@@ -1,0 +1,26 @@
+/* --- BANNER --- */
+.banner {
+    background-image: 
+        linear-gradient(to bottom, #0009, #0009),
+        url('../images/blog-image-adventurers.jpg');
+
+    background-position: bottom;
+}
+
+/* - BANNER CONTENT - */
+.banner__text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.banner__text a:hover,
+.banner__text a:focus-visible {
+    color: var(--color-accent);
+}
+
+.banner__tags {
+    margin-top: 1.5rem;
+
+    display: flex;
+    gap: 1rem;
+}

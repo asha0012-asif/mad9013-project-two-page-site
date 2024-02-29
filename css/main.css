@@ -126,8 +126,8 @@ a:focus-visible {
 /* --- BANNER --- */
 .banner {
   background-image: 
-      linear-gradient(to bottom, #0009, #0009),
-      url('../images/hero-banner.jpg');
+    linear-gradient(to bottom, #0009, #0009),
+    url('../images/hero-banner.jpg');
   background-position: center;
   background-size: cover;
 }
