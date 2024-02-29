@@ -147,21 +147,32 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <img src="./images/logo-ac.svg" alt="Adventure Co. Logo" />
-        <nav>
-          <ul>
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./blog-post.html">Blog</a></li>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
+
+        <a href="/" class="footer__logo">
+          <img src="./images/logo-ac.svg" alt="Adventure Co. Logo" />
+        </a>
+
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a href="./index.html" class="footer__nav-link">About</a></li>
+                <li><a href="./blog-post.html" class="footer__nav-link">Blog</a></li>
+                <li><a href="#" class="footer__nav-link">Download</a></li>
+                <li><a href="#" class="footer__nav-link">Sign Up</a></li>
+            </ul>
         </nav>
-        <small> &copy; 2024 Adventure Co-Opertative </small>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+
+        <div class="footer__legal">
+          <small class="footer__legal-copyright">&copy; 2024 Adventure Co-Operative</small>
+
+          <ul class="footer__legal-links">
+            <li><small><a href="#">Privacy Policy</a></small></li>
+            <li><small><a href="#">Terms of Service</a></small></li>
+          </ul>
+        </div>
+      
       </div>
-    </footer>
+  </footer>
   </body>
 </html>
