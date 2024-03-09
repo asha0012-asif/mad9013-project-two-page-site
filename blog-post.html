@@ -7,11 +7,9 @@
 
     <link rel="stylesheet" href="./css/css-reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/blog-post.css">
   </head>
   
   <body>
-    <!-- --- HEADER --- -->
     <header class="header">
       <div class="container">
         <a href="./index.html" class="header__logo">
@@ -20,18 +18,17 @@
 
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__list-item"><a href="./index.html">About</a></li>
-            <li class="header__list-item"><a href="./blog-post.html">Blog</a></li>
-            <li class="header__list-item"><a href="#">Download</a></li>
-            <li class="header__list-item"><a href="#">Sign Up</a></li>
+            <a href="./index.html" class="header__list-item"><li>About</li></a>
+            <a href="./blog-post.html" class="header__list-item"><li>Blog</li></a>
+            <a href="#" class="header__list-item"><li>Download</li></a>
+            <a href="#" class="header__list-item"><li>Sign Up</li></a>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-    <!-- --- BLOG POST BANNER --- -->
-      <section class="banner banner--center">
+      <section class="banner banner--blog-post">
         <div class="container">
             <div class="banner__content">
               <h1 class="banner__title">
@@ -51,14 +48,11 @@
 
       </section>  
 
-      <!-- --- BLOG POST --- -->
       <section class="blog-post">
         <div class="container">
 
-          <!-- -- ARTICLE -- -->
           <div class="blog-post__article">
 
-            <!-- - MAIN ARTICLE - -->
             <article class="blog-post__article-main">
               <div class="article-main__text">
                 <p>
@@ -302,7 +296,6 @@
             
             </article>
 
-            <!-- - ARTICLE FOOTER - -->
             <div class="blog-post__article-footer">
               <p>
                 Mike Bernier (<a href="https://twitter.com/arcane_eye" target="_blank">@arcane_eye</a>) is the founder of 
@@ -316,7 +309,6 @@
             </div>
           </div>
           
-          <!-- -- ASIDE / RELATED BLOG POSTS -- -->
           <aside class="aside">
             <div class="container">
               <h2 class="aside__title">Related Blog Posts</h2>
@@ -357,7 +349,6 @@
 
     </main>
 
-    <!-- --- FOOTER --- -->
     <footer class="footer">
       <div class="container">
 
