@@ -11,22 +11,31 @@ function init() {
         // keep track of the number of times the nav icon is clicked
         navIconClickCount++;
         
-        let navIconState = `<span class="material-symbols-outlined header__hamburger-nav-icon header__hamburger-nav-icon--close">menu</span>`;
+        let navIconState = "menu";
         
         // if the number of times the nav icon is clicked is odd, show the nav menu and change the icon to close
         if (navIconClickCount % 2 == 1) {
+            navIconState = "close";
+            
+            // removes the header__nav--hide class and add the header__nav--show class to show the nav menu
             console.log("showNavMenu");
-            headerNav.style.display = "flex";
+            
+            headerNav.classList.remove("header__nav--hide");
+            headerNav.classList.add("header__nav--show");
 
-            navIconState = `<span class="material-symbols-outlined header__hamburger-nav-icon header__hamburger-nav-icon--open">close</span>`;
-        
-        // if the number of times the nav icon is clicked is even, hide the nav menu and change the icon to open (regular hamburger icon)
+        // else the number of times the nav icon is clicked is even, so hide the nav menu and change the icon to open (regular hamburger icon)
         } else {
+            // removes the header__nav--show class and add the header__nav--hide class to hide the nav menu
             console.log("hideNavMenu");
-            headerNav.style.display = "none";
+
+            headerNav.classList.remove("header__nav--show");
+            headerNav.classList.add("header__nav--hide");
         }
 
-        hamburgerNavIconSpan.innerHTML = navIconState;
+        hamburgerNavIconSpan.innerText = navIconState;
+
+        console.log(hamburgerNavIconSpan);
+        console.log(headerNav);
     }
 }
 

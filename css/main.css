@@ -155,13 +155,14 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .header__logo {
   width: 10rem;
 }
 
+/* - HEADER NAV ICON (FOR MOBILE) - */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
@@ -179,8 +180,16 @@ small {
 
 /* - HEADER NAV - */
 .header__nav {
-  display: none;
   background-color: var(--color-primary);
+  display: var(--header-nav-display);
+}
+
+.header__nav--hide {
+  --header-nav-display: none;
+}
+
+.header__nav--show {
+  --header-nav-display: block;
 }
 
 .header__nav,
@@ -580,7 +589,8 @@ small {
     }
 
     .header__nav {
-      display: block;
+      /* no matter the reason, keep display block */
+      --header-nav-display: block;
       width: 60%;
     }
   
