@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adventure Co.</title>
 
+    <!-- HAMBURGER MENU ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="./css/css-reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -12,11 +16,17 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="header__logo">
-          <img src="./images/logo-ac.svg" alt="Adventure Co. Logo" />
-        </a>
+        <div class="header__main">
+          <a href="./index.html" class="header__logo">
+            <img src="./images/logo-ac.svg" alt="Adventure Co. Logo" />
+          </a>
+          <div class="header__hamburger-nav-icon-container">
+            <span class="material-symbols-outlined header__hamburger-nav-icon">menu</span>
+          </div>
+        </div>
 
-        <nav class="header__nav">
+        <!-- for mobile sizes, header__nav will be hidden at first -->
+        <nav class="header__nav header__nav--hide">
           <ul class="header__list">
             <a href="./index.html" class="header__list-item"><li>About</li></a>
             <a href="./blog-post.html" class="header__list-item"><li>Blog</li></a>
@@ -173,6 +183,8 @@
         </div>
       
       </div>
-  </footer>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
